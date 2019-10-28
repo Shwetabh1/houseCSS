@@ -1,0 +1,47 @@
+/* Only elements positioned by the box model can be transformed. As a rule of thumb, an element is positioned by the box model if it has display: block. */
+
+You play with the cordinate system.
+<html>
+<head>
+    <style>
+    
+    .element {
+        width: 20px;
+        height: 20px;
+        transform: scale(10) skew(10deg);
+    }
+
+    .container {
+        position: relative;
+    }
+
+    #clip {
+        position: absolute;
+        clip: rect(0, 120, 80px, 0);
+        /* clip: shape(top, right, bottom, left); NB 'rect' is the only available option */
+    }
+
+    .abc {
+        transform: translateX(10px) rotate(10deg) translateY(5px);
+        transform-origin: top-left;
+        transform-origin: center;
+        transform-origin: first value is horizontal second is vertical third is 3d
+    }
+    </style>
+</head>
+<body>
+    <!-- -->
+    <div class="container">
+    </div>
+</body>
+</html>
+
+/* Translate takes three properties
+Single length/percentage value
+A length or percentage that specifies a 2D translation, with the same translation along both the X and Y axes. Equivalent to a translate() (2D translation) function with a single value specified.
+Two length/percentage values
+Two lengths or percentages that specify the X and Y axis translation values (respectively) of a 2D translation. Equivalent to a translate() (2D translation) function with two values specified.
+Three length/percentage values
+Three lengths or percentages that specify the X, Y, and Z axis translation values (respectively) of a 3D translation. Equivalent to a translate3d() (3D translation) function.*/
+
+

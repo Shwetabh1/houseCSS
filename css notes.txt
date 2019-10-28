@@ -1,0 +1,98 @@
+1. Basic CSS  Mozilla and Video Lecture 
+2. FlexBox
+
+cascading style sheet some bullshit definition
+
+<link rel="stylesheet" href="">
+
+Selector:
+element rules
+id rules 
+
+descendant selector {kinda specific} div p
+class rules   //order of preference?
+
+
+child selector
+
+div >p
+
+difference 
+
+<div>
+<form>
+<p> hey </p>
+</form> //this is a decscendant 
+<p> this is child </p>
+<div>
+
+attribute selector 
+img[alt=spacing]
+
+pesudo class
+
+a:visited
+
+background-image:url();
+
+* {
+	color: white //eveything will have a color white i.e text
+}
+
+Cascade: what styles the browser will apply to html elements
+
+
+There are three kinds of css
+1. Given by browser : least precedence
+User Agent Stylesheet: given by us: more precendence
+Author stylesheet: <link> ..</link> most precedence
+
+use !important to override any of it.
+
+which will be applied?
+p {
+	background-color: red;
+}
+
+p {
+	background-color:green;
+}
+the last one encountered;
+
+<script style1.css>
+<script style2.css> //this will be given more preference
+
+
+//this is a csss file called styles1.css
+@import url(styls2.css)
+
+p {
+	background-color:red;
+}
+
+whatever is encountered at end is given preference
+
+Which rule is preferred in case of conflicts depends on the specificity. That's all there is to it.
+
+
+1. Box Model
+2. ruleset: the selectors that are selected. (just like regex)
+3. At-rules are used in CSS to convey metadata, conditional information, or other descriptive information.
+
+---------------------
+|		Margin		|
+| ----------------  |
+| |		Border	  | |
+| | ------------- | |	
+| | |  Padding  | | |
+| | |           | | |
+| | |  Content  | | |
+| | |           | | |
+| | ------------- | |
+| |---------------| |
+|-------------------|
+
+
+
+
+The z-index CSS property specifies the z-order of a positioned element and its descendants. When elements overlap, z-order determines which one covers the other. An element with a larger z-index generally covers an element with a lower one.

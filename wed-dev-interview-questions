@@ -1,0 +1,60 @@
+//AMAZON INTERVIEW PREPARATION//
+
+--------------------------------------------------------------------------
+Explanation of the group and position that the interview is for.
+My Previous Internship Experience
+Behavioural Questions
+Why am I leaving the Current Job
+Amazon Principles 
+--------------------------------------------------------------------------
+
+THEORY
+HTML5 Features.
+Page Latency.
+Asynchronous & Synchronous web pages and functionalities onto web pages.
+
+JAVASCRIPT
+Complete your tries shit. [auto complete feature]
+Implement a SortedMap in JavaScript.  
+Traverse the DOM.
+Traverse the DOM and find an element with a specified class name.
+Two Dimensional Filter.
+SUM(3)(4)(5) = 12
+
+CSS
+Vertically and horizontally center an element on the screen using css.  --use flexbox [learn flexbox inside out]
+Zoom an image.[done]
+Css Positioning. [night][done]
+Make an accordion where when clicked, text expands from it and when another item is clicked, the first one collapses and the second one expands.  
+
+SYSTEM DESIGN
+Outline how you would implement a chess game in a language of your choice.  
+
+My algorithm questions were presented as DOM traversals. Using CS concepts here is the key. Casually refer to an array as a stack or queue depending on how you're using it, mention why you're using breadth first instead of depth, etc.
+
+How would you make this markup more accessible for a visually impaired person? Hearing impaired? How about a person on a slow network?  
+
+How would you reverse a linked list?  
+
+Design progress bar using html,css and jquery given a number in percentage using json....(without using any built in api&#039;s)  
+
+
+Here is a JSON response and the desired output format. How would you render it in a DOM?  
+1 Answer
+Here is a purchase button. How would you structure the HTML and CSS? Now we are adding n variants of the button, how would you handle this?  
+Answer Question
+How would you build a sharable form validation component? Show the HTML and JS.  
+2 Answers
+How would you implement document.querySelectorAll manually using recursion?  
+
+
+
+-----------------------------------
+Revision Strategy 
+-----------------------------------
+
+1. Competitive Coding
+2. CSS
+3. HTML
+4. JavaScript
+5. Theory

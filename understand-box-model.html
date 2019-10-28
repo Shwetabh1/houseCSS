@@ -1,0 +1,76 @@
+<!-- When laying out a document, the browser's rendering engine represents each element as a rectangular box according to the standard CSS basic box model.
+     CSS determines the size, position, and properties (color, background, border size, etc.) of these boxes.
+     Order is : C->P->B->M
+-->
+<html>
+
+<head>
+    <style>
+
+        h1 {
+            border: 1px solid black;
+            color: blue;
+            background-color: yellow;
+            text-decoration: underline;
+        }
+
+        .encloser {
+            margin-top: 10px;
+        }
+
+        .encloser h2 {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        #example1 {
+    box-sizing: content-box;    
+    width: 300px;
+    height: 100px;
+    padding: 30px;    
+    border: 10px solid blue;
+}
+
+#example2 {
+    box-sizing: border-box;
+    width: 300px;
+    height: 100px;
+    padding: 30px;    
+    border: 10px solid blue;
+}
+    </style>
+</head>
+
+<body>
+
+    <h1> BOX MODEL </h1>
+    <img src="https://github.com/Shwetabh1/Javascript-Essential-Parts/blob/master/Images/boxmodel.png" alt="Box Model HTML"/>
+    <div class="encloser">
+        <h2> This is text with padding and margin 10</h2>
+    </div>
+    There are two modes which can be set via box-sizing: property
+1. box-sizing: content-box (default)
+2. box-sizing: border-box
+
+<h1>The box-sizing Property</h1>
+<p>Defines how the width and height of an element are calculated: should they include padding and borders, or not.</p>
+
+<h2>box-sizing: content-box (default):</h2>
+<p>Width and height only apply to the content of the element:</p>
+<div id="example1">This div has a width of 300px. But the full width is 300px + 20px (left and right border) + 60px (left and right padding) = 380px!</div>
+
+<h2>box-sizing: border-box:</h2>
+<p>Width and height apply to all parts of the element: content, padding and borders:</p>
+<div id="example2">Here, the full width is 300px, no matter what!</div>
+<div class="paragraph">
+    <p> The web is made of boxes.
+     Core of box model is typography and typesetting.
+     If you use a typesetting box then you would understand. Notice this letter y. Each word is on the same line called the base line.
+     the letter y bottom goes below the line. for f something goes above. from above to bottom is called  point size.
+     1 point size is the value of letter M in the current font size from top to bottom
+    </p>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<html>
+<style> 
+.container1 {
+	z-index: -1;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+}
+.container2 {
+	z-index: 3;
+}
+.container3 {
+	z-index: 5;
+}
+
+.dot {
+  height: 55px;
+  width: 55px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+</style>
+<body>
+	<div class="container1">
+		<img src="iis.png">
+	</div>
+	<div class="container3">
+		<pre><h1>This has z index as 5</h1></pre>
+	</div>
+	<div class="container2">
+		<pre><h1>This has z index as 3</h1></pre>
+	</div>
+	<div class="dot"></div>
+	</body>
+</html>

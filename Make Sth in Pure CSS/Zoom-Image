@@ -1,0 +1,30 @@
+The method elem.getBoundingClientRect() returns window coordinates for elem as an object with properties:
+
+top – Y-coordinate for the top element edge,
+left – X-coordinate for the left element edge,
+right – X-coordinate for the right element edge,
+bottom – Y-coordinate for the bottom element edge.
+
+
+It is relative to the window
+
+
+Because it is absolute it is fixed to a position.
+Will not move from there.
+
+It is because getBoundingClientRect() gets values with respect to the window(only the current visible portion of the page), not the document(whole page).
+
+myElement.getBoundingClientRect().top + window.scrollY;
+
+The pageXOffset and pageYOffset properties returns the pixels the current document has been scrolled from the upper left corner of the window, horizontally and vertically.
+
+The background-position property in CSS allows you to move a background image (or gradient) around within its container.
+
+It has three different types of values:
+
+Length values (e.g. 100px 5px)
+Percentages (e.g. 100% 5%)
+Keywords (e.g. top right)
+
+
+http://jsfiddle.net/7zn8K/259/
